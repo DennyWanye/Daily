@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://DennyWanye.GitHub.io</id>
+    <title>DennyWanye</title>
+    <updated>2024-09-04T03:18:05.742Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://DennyWanye.GitHub.io"/>
+    <link rel="self" href="https://DennyWanye.GitHub.io/atom.xml"/>
+    <subtitle>Keep track of interesting things</subtitle>
+    <logo>https://DennyWanye.GitHub.io/images/avatar.png</logo>
+    <icon>https://DennyWanye.GitHub.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, DennyWanye</rights>
+    <entry>
+        <title type="html"><![CDATA[有限和无限的游戏读后感]]></title>
+        <id>https://DennyWanye.GitHub.io/post/you-xian-he-wu-xian-de-you-xi-du-hou-gan/</id>
+        <link href="https://DennyWanye.GitHub.io/post/you-xian-he-wu-xian-de-you-xi-du-hou-gan/">
+        </link>
+        <updated>2024-09-04T03:10:43.000Z</updated>
+        <content type="html"><![CDATA[<p>《有限与无限的游戏》（Finite and Infinite Games）是詹姆斯·卡斯（James P. Carse）于1986年出版的一本哲学书籍。这本书以一种独特的方式探讨了人生和世界的不同层面，特别是通过“游戏”的隐喻来探讨人类行为和生活方式。</p>
+<p>主要内容和观点</p>
+<ol>
+<li>
+<p>有限游戏 vs. 无限游戏</p>
+<p>•	有限游戏：<br>
+•	有明确的开始和结束。<br>
+•	参与者在既定的规则下竞争。<br>
+•	目标是赢得比赛，赢得胜利意味着游戏的结束。<br>
+•	例如：体育比赛、商业竞争、战争等。<br>
+•	无限游戏：<br>
+•	没有固定的规则和时间限制，规则可以随时改变。<br>
+•	参与者的目标不是赢得比赛，而是继续游戏，保持游戏的延续。<br>
+•	强调的是持续的参与和探索，而非终结。<br>
+•	例如：生活本身、文化的发展、创造性的活动等。</p>
+</li>
+<li>
+<p>游戏的心态</p>
+<p>•	卡斯认为，生活中大部分的行为和决策都可以归类为有限游戏或无限游戏。有限游戏的玩家关注的是控制、权力和胜利，而无限游戏的玩家则更关注开放性、可能性和创造性。</p>
+</li>
+<li>
+<p>规则与自由</p>
+<p>•	在有限游戏中，规则是固定的，打破规则即意味着作弊或失败。<br>
+•	在无限游戏中，规则可以被改变，玩家有更多的自由去探索新的可能性，创造新的规则。</p>
+</li>
+<li>
+<p>赢家与输家</p>
+<p>•	有限游戏中，赢家和输家是明确的，胜利意味着游戏的终结。<br>
+•	无限游戏中，没有最终的赢家或输家，关键在于游戏的持续进行和不断演变。</p>
+</li>
+<li>
+<p>角色与身份</p>
+<p>•	卡斯区分了“角色”和“身份”：<br>
+•	角色是有限游戏中扮演的特定身份，受制于规则和期望。<br>
+•	身份是无限游戏中的自我认知，更加开放和流动。</p>
+</li>
+<li>
+<p>生命的哲学</p>
+<p>•	卡斯通过这些对有限与无限游戏的分析，试图引导读者去反思自己在生活中的选择，是遵循有限游戏的模式，还是追求一种更开放、自由和创造性的无限游戏方式。</p>
+</li>
+</ol>
+<p>总结</p>
+<p>《有限与无限的游戏》鼓励读者超越传统的胜负观念，追求一种更具创造性、开放性和持续性的生活方式。它不仅仅是一本哲学书，更是一种生活的指导，提醒我们在面对生活的各种挑战和选择时，可以采取不同的心态和视角。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[升级Node版本：V12->V20/V16->V20]]></title>
+        <id>https://DennyWanye.GitHub.io/post/sheng-ji-node-ban-ben-v12-greaterv20v16-greaterv20/</id>
+        <link href="https://DennyWanye.GitHub.io/post/sheng-ji-node-ban-ben-v12-greaterv20v16-greaterv20/">
+        </link>
+        <updated>2024-08-09T02:36:15.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="背景">背景</h3>
+<p>项目上面最近需要将node的版本升级到V20，不过现在项目里面有的用的是V12的node，有的用的是V16的node。</p>
+<h3 id="一-利用nvm将项目的node环境转换为20">一、利用nvm将项目的node环境转换为20</h3>
+<p>nvm 是一种很方便管理本地node版本的工具，可以快速的切换本地的node环境。</p>
+<pre><code class="language-javascript">nvm use 20
+</code></pre>
+<h3 id="二-解决npm-i的报错">二、解决npm i的报错</h3>
+<p>以下是报错和如何解决的：</p>
+<h5 id="报错1">报错1：</h5>
+<pre><code> Could not resolve dependency:
+ peer react-dom@&quot;^15.4.2&quot; from react-addons-test-utils@15.6.2
+ node_modules/react-addons-test-utils
+   dev react-addons-test-utils@&quot;^15.1.0&quot; from the root project
+
+</code></pre>
+<p>原因：<br>
+This package is deprecated as of version 15.5.0<br>
+TestUtils have been moved to react-dom/test-utils<br>
+Shallow renderer has been moved to react-test-renderer/shallow</p>
+<p>解决：<br>
+因为项目里面没有引用，所以删除该包</p>
+<h5 id="报错2">报错2：</h5>
+<pre><code> Could not resolve dependency:
+ peer webpack@&quot;&gt;=1.12.9 &lt;3.0.0&quot; from babel-plugin-webpack-loaders@0.9.0
+ node_modules/babel-plugin-webpack-loaders
+   dev babel-plugin-webpack-loaders@&quot;^0.9.0&quot; from the root project
+</code></pre>
+<p>原因：<br>
+package.json中的webpack版本为3.12.0，而 babel-plugin-webpack-loaders@0.9.0需要的webpack版本为&gt;=1.12.9 ❤️.0.0</p>
+<p>解决：<br>
+因为babel-plugin-webpack-loaders太旧了停止维护，没有更新的版本，所以只能将webpack降低版本，降低为2.7</p>
+<h5 id="报错3">报错3：</h5>
+<pre><code>Could not resolve dependency:
+ peer draft-js@&quot;^0.10.x&quot; from react-draft-wysiwyg@1.12.13
+ node_modules/react-draft-wysiwyg
+   react-draft-wysiwyg@&quot;^1.12.13&quot; from the root project
+</code></pre>
+<p>原因：<br>
+react-draft-wysiwyg需要的为&quot;draft-js&quot;: &quot;<sup>0.10.x”，而package.json中的为&quot;</sup>0.11.7&quot;</p>
+<p>解决：<br>
+因为项目里面没有引用，所以删除该包</p>
+<h5 id="报错4">报错4：</h5>
+<pre><code>'darwin-x64' binaries cannot be used on the 'darwin-arm64v8' platform. Please remove the 'node_modules/sharp/vendor' directory and run 'npm install'.
+</code></pre>
+<p>原因：<br>
+Sharp 需要单独安装适配本机苹果M1芯片的包</p>
+<p>解决：<br>
+发现关于sharp包的安装问题，在M1芯片的Mac上，需要在安装的时候，利用 <code>npm install --cpu=arm64 --os=darwin sharp</code></p>
+<h5 id="报错5">报错5：</h5>
+<pre><code>关于extract-text-webpack-plugin的版本支持3.0以上的webpack的报错，错误暂时找不到了，跟
+报错2类似，而且这个报因为弃用了，所以在npm官网上面搜索不到，我最后是在谷歌搜索里面搜索这个包名称，才找到了之前的地址。
+以下是地址：https://www.npmjs.com/package/extract-text-webpack-plugin
+
+建议遇见这种直接利用url规律替换掉包名称进行访问 https://www.npmjs.com/package/包名称
+
+</code></pre>
+<p>原因：<br>
+extract-text-webpack-plugin的版本支持3.0以上的webpack</p>
+<p>解决：<br>
+找到其git链接后，将其降低至对应webpack2.0版本的包</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[记录MongoDB升级 5.0 to 6.0]]></title>
+        <id>https://DennyWanye.GitHub.io/post/ji-lu-mongodb-sheng-ji-50-to-60/</id>
+        <link href="https://DennyWanye.GitHub.io/post/ji-lu-mongodb-sheng-ji-50-to-60/">
+        </link>
+        <updated>2024-08-09T02:25:52.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="一-确定mongodb的升级版本兼容性影响">一、确定MongoDB的升级版本兼容性影响</h3>
+<p>可以从官网找到：<br>
+https://www.mongodb.com/zh-cn/docs/manual/release-notes/6.0-compatibility/</p>
+<p>先看一遍，在结合本地代码了解需要处理的错误：</p>
+<p>像是这次需要处理的代码如下：</p>
+<ol>
+<li>not support options: usecreateindex, usefindandmodify, autoreconnect</li>
+<li>reconnectinterval, reconnecttries</li>
+<li>关注带有 $regex 查询的功能， test case 要包含这类功能</li>
+<li>删除的操作符</li>
+<li>已删除参数 --tlsFIPSMode</li>
+<li>弃用 db.collection.reIndex()</li>
+<li>检查 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mi>c</mi><mi>c</mi><mi>u</mi><mi>m</mi><mi>u</mi><mi>l</mi><mi>a</mi><mi>t</mi><mi>o</mi><mi>r</mi><mi mathvariant="normal">、</mi></mrow><annotation encoding="application/x-tex">accumulator、</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault">c</span><span class="mord mathdefault">c</span><span class="mord mathdefault">u</span><span class="mord mathdefault">m</span><span class="mord mathdefault">u</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">a</span><span class="mord mathdefault">t</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord cjk_fallback">、</span></span></span></span>function 和 $where 表达式中已删除字符串和数组函数</li>
+<li>检查 expireAfterSeconds 设为 NaN 的 TTL index</li>
+</ol>
+<pre><code class="language-javascript">//查询 TTL Non index 的脚本
+function getNaNIndexes() {
+   const nan_index = [];
+ 
+   const dbs = db.adminCommand({ listDatabases: 1 }).databases;
+ 
+   dbs.forEach((d) =&gt; {
+      if (d.name != 'local') {
+         const listCollCursor = db
+            .getSiblingDB(d.name)
+            .runCommand({ listCollections: 1 }).cursor;
+ 
+         const collDetails = {
+            db: listCollCursor.ns.split(&quot;.$cmd&quot;)[0],
+            colls: listCollCursor.firstBatch.map((c) =&gt; c.name),
+         };
+ 
+         collDetails.colls.forEach((c) =&gt;
+            db
+               .getSiblingDB(collDetails.db)
+               .getCollection(c)
+               .getIndexes()
+               .forEach((entry) =&gt; {
+                  if (Object.is(entry.expireAfterSeconds, NaN)) {
+                     nan_index.push({ ns: `${collDetails.db}.${c}`, index: entry });
+                  }
+               })
+         );
+      }
+   });
+ 
+   return nan_index;
+};
+ 
+getNaNIndexes();
+ 
+</code></pre>
+<h3 id="二-根据上面做出来的信息对本地代码作出修改">二、根据上面做出来的信息，对本地代码作出修改</h3>
+<p>这一步，主要是根据第一步整理出来的信息做代码检查和修改，确定本地的代码已经做了第一步的兼容性处理。</p>
+<h3 id="三-将本地的项目连接上60版本的mongodb数据库运行并解决报错">三、将本地的项目连接上6.0版本的MongoDB数据库，运行并解决报错</h3>
+<p>这一步，直接在本地项目上面链接6.0版本的数据库，很幸运，没有出现很难解决的报错。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Expo Realm 数据库操作]]></title>
+        <id>https://DennyWanye.GitHub.io/post/expo-realm-shu-ju-ku-cao-zuo/</id>
+        <link href="https://DennyWanye.GitHub.io/post/expo-realm-shu-ju-ku-cao-zuo/">
+        </link>
+        <updated>2024-08-03T04:36:50.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="一-读取操作">一、读取操作</h3>
+<p>用 <code>useQuery</code> 的方法：</p>
+<pre><code class="language-javascript">
+export type RealmQuerySearchText = {
+    searchKey: string,
+    searchValue: any,
+}
+
+export const useQueryN = (flag: flag, searchParams?: RealmQuerySearchText | undefined) =&gt; {
+  return useQuery(flag, item =&gt; {
+    if (searchParams) {
+      return item.filtered(searchParams.searchKey + ' TEXT $0', searchParams.searchValue)
+    } else {
+      return item
+    }
+  });
+}
+
+</code></pre>
+<p>用 <code>useObject</code>的方法没有成功过，不知道怎么传递 <code>_id</code> 数据，不过以下是用 <code>realm.object</code>方法的示例。</p>
+<pre><code class="language-javascript">await realm
+    .objects(UserData)             //UserData 是 schema
+    .filtered(`userId == $0`, userId)
+
+</code></pre>
+<h3 id="二-写入操作">二、写入操作</h3>
+<p>利用 <code>realm.write</code> :</p>
+<p>第一种方式：</p>
+<pre><code class="language-javasciprt">
+//timelinesBeforeSort的schema 中 包含了 events的schema，是以List的方式包含的
+//events必须是一个全新的对象（对于events的主键来说，也就是主键需要新建，不能存在
+//这也就意味着不能用这种方法将已经存在的events 链接到 timelinesBeforeSort的schema上
+
+    await realm.write(() =&gt; {
+      timelinesBeforeSort.events = [...timelinesBeforeSort.events, {
+        _id: new BSON.ObjectId(),
+        what: what,
+        why: why || '',
+        how: how || '',
+        start: start,
+        end: end,
+        who: [...who],
+        where: [...where],
+      }]
+    })
+
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Expo Realm 配置本地和远端的数据库进行同步]]></title>
+        <id>https://DennyWanye.GitHub.io/post/expo-realm-pei-zhi-ben-di-he-yuan-duan-de-shu-ju-ku-jin-xing-tong-bu/</id>
+        <link href="https://DennyWanye.GitHub.io/post/expo-realm-pei-zhi-ben-di-he-yuan-duan-de-shu-ju-ku-jin-xing-tong-bu/">
+        </link>
+        <updated>2024-07-26T06:08:04.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="开始之前-创建一个appservice并开启同步注意查看一下提示注意项">开始之前 创建一个AppService，并开启同步（注意查看一下提示注意项）</h3>
+<p>这个一步需要在官网进行操作：<br>
+当然你需要先在官网创建一个DB 和APP Service。</p>
+<figure data-type="image" tabindex="1"><img src="https://DennyWanye.GitHub.io/post-images/1721975331662.png" alt="" loading="lazy"></figure>
+<p>注意1: 第一次使用请注意将接受匿名链接开启，否则，你很难连上，可以后续按照你的需要进行增加权限验证功能：<br>
+<img src="https://DennyWanye.GitHub.io/post-images/1721975558074.png" alt="" loading="lazy"></p>
+<p>注意2: 将如果你提示IP Address限制访问的问题，请直接添加一下规则到Network Access中，代表允许任意IP进行访问：<br>
+<img src="https://DennyWanye.GitHub.io/post-images/1721975682205.png" alt="" loading="lazy"></p>
+<p>在后端启用 Flexible Sync。您必须在后端配置 Flexible Sync，然后才能在客户端应用程序中使用：<br>
+https://www.mongodb.com/zh-cn/docs/atlas/app-services/sync/configure/enable-sync/#std-label-enable-flexible-sync</p>
+<h3 id="初始化应用客户端">初始化应用客户端</h3>
+<p>doc: https://www.mongodb.com/zh-cn/docs/atlas/device-sdks/sdk/react-native/app-services/connect-to-app-services-app/#std-label-react-native-connect-to-mongodb-realm-backend-app</p>
+<p>此步骤的目的是为了让localApp和远程创建的app进行访问：<br>
+以下为代码：</p>
+<pre><code class="language-javascript">import React from 'react';
+import {AppProvider, UserProvider, RealmProvider} from '@realm/react';
+function AppWrapperSync() {
+  return (
+    &lt;AppProvider id={APP_ID}&gt;           //1. 输入AppID
+      &lt;UserProvider fallback={LogIn}&gt;    //2.利用UserProvider，fallback进行登录验证，建议一开始使用匿名登录，使用匿名登录需要确认一下 注意1 的设置
+        &lt;RealmProvider                         //此处设置 sync 对象的 flexible: true， 代表进行同步。
+          schema={[YourObjectModel]}
+          sync={syncConfigWithErrorHandling}&gt;
+          &lt;RestOfApp /&gt;
+        &lt;/RealmProvider&gt;
+      &lt;/UserProvider&gt;
+    &lt;/AppProvider&gt;
+  );
+}
+
+  //处理如果同步远端realm失败的情况，作用，同步失败的报错信息影响用户体验
+  const syncConfigWithErrorHandling: any = {
+    flexible: true,                 //设置为true，开启同步
+    onError: (_session: any, error: any) =&gt; {      //处理报错情况，感觉忽略就好
+      console.log(_session)
+      console.log(error);
+    },
+    //用于给remote初始化schemas
+    // initialSubscriptions: {
+    //   update(subs, realm) {
+    //     subs.add(realm.objects(schemas));
+    //   },
+    // }
+    newRealmFileBehavior: realmAccessBehavior,        //用于处理离线时，同步失败的情况
+    existingRealmFileBehavior: realmAccessBehavior,   //用于处理离线时，同步失败的情况
+  }
+
+
+//此为在如果项目离线时，同步的设置，专门针对app离线时候的处理：https://www.mongodb.com/zh-cn/docs/atlas/device-sdks/sdk/react-native/sync-data/configure-a-synced-realm/#access-a-synced-realm-while-offline
+const realmAccessBehavior: Realm.OpenRealmBehaviorConfiguration = {
+    //type: Realm.OpenRealmBehaviorType.OpenImmediately,
+    //@ts-ignore
+    type: 'downloadBeforeOpen',            //https://www.mongodb.com/docs/realm-sdks/react/latest/enums/Realm.OpenRealmBehaviorType.html
+    //@ts-ignore
+    timeOutBehavior: 'openLocalRealm',     //https://www.mongodb.com/docs/realm-sdks/react/latest/enums/Realm.OpenRealmTimeOutBehavior.html
+    timeOut: 1000,
+  };
+
+</code></pre>
+<h3 id="对客户端项目中的用户进行身份验证">对客户端项目中的用户进行身份验证：</h3>
+<p>Login的代码逻辑，可以使用API Key，邮箱/密码等，但是国内网络原因且只是测试，所以使用匿名登录， 注意1<br>
+<img src="https://DennyWanye.GitHub.io/post-images/1721981570743.png" alt="" loading="lazy"></p>
+<pre><code class="language-javacript">
+import { View, Text } from 'react-native';
+import { useEffect } from 'react'
+import { useAuth } from '@realm/react';
+
+
+const LogIn = () =&gt; {
+    // `logInWithAnonymous` logs in a user using an
+    // anonymous Realm Credential.
+    // `result` gives us access to the result of the
+    // current operation. In this case, `logInWithAnonymous`.
+    const { logInWithAnonymous, result } = useAuth();     //直接利用logInWithAnonymous来进行匿名登录
+    // Log in an anyonmous user on component render.
+    // On successful login, this fallback component unmounts.
+    useEffect(() =&gt; {
+        logInWithAnonymous();
+    }, [])
+    return (
+        &lt;View &gt;
+            {!result.error &amp;&amp; &lt;Text&gt;Please log in&lt;/Text&gt;}
+            &lt;View&gt;
+                {result.pending &amp;&amp; &lt;Text&gt;{JSON.stringify(result.pending)}&lt;/Text&gt;}
+                {result.error &amp;&amp; &lt;Text&gt;{JSON.stringify(result.error)}&lt;/Text&gt;}
+            &lt;/View&gt;
+        &lt;/View&gt;
+    );
+};
+
+export default LogIn
+
+</code></pre>
+<p>APP_ID的位置：<br>
+<img src="https://DennyWanye.GitHub.io/post-images/1721979221799.png" alt="" loading="lazy"></p>
+<h3 id="调用订阅方法订阅每一个需要同步的model这时你的数据改动">调用订阅方法，订阅每一个需要同步的model，这时你的数据改动</h3>
+<pre><code class="language-javascript">import React from 'react';
+import { useState, useEffect } from 'react';
+import { useRealm } from '@realm/react';
+import { WaitForSync} from 'realm';
+
+import { useColorScheme } from '@/hooks/useColorScheme';
+import { useQueryN, useCreateAndUpdate, useDelte } from '@/hooks/useRealmNovle';
+import ListOfRealmModels from '@/constants/ListOfRealmModels';
+
+
+  const realm = useRealm()
+  const ideas: any = useQueryN(ListOfRealmModels.ideas);  //此处ideas的值为从本地数据库库中利用 useQuery(&quot;Ideas&quot;)拿出来的值，这个值是带有subscribe方法的。
+  const tags: any = useQueryN(ListOfRealmModels.tags);
+  const collections: any = useQueryN(ListOfRealmModels.collections);
+  const objects: any = useQueryN(ListOfRealmModels.object);
+  const events: any = useQueryN(ListOfRealmModels.events);
+  const subscribeArray: any = [ideas, tags, collections, objects, events]
+
+  function subscribeModel(subscribeArray: Array&lt;any&gt;) {
+    // Create an async function so that we can `await` the
+    // promise from `.subscribe()`.
+    subscribeArray.forEach((item, index) =&gt; {
+      const createSubscription = async () =&gt; {
+        await item.subscribe({
+          name: 'subscribe' + index,
+          behavior: WaitForSync.FirstTime,                  //When you subscribe to a query's results, the results do not contain objects until synced data is downloaded. When you do need to wait for synced objects to finish downloading, configure the waitForSync option.
+        });
+      };
+      createSubscription().catch(console.error);
+    })
+  }
+
+  useEffect(() =&gt; {
+    subscribeModel(subscribeArray)
+  }, []);
+
+</code></pre>
+<h3 id="修改登录方式为邮箱密码登录">修改登录方式为邮箱/密码登录</h3>
+<ol>
+<li>在web的AppService中开启登录方式<br>
+<img src="https://DennyWanye.GitHub.io/post-images/1722318411077.png" alt="" loading="lazy"></li>
+<li>配置邮箱验证<br>
+说明： 暂时设置为Automatically confirm users ，这样子就不需要额外的验证网页了，方便开发<br>
+同理password reset Method设置为 Run a password reset function， 然后设置默认函数（直接点击保存就好了），这个函数虽然无法执行预期的修改功能，但是方便我们开始进行开发，后面可以对这个进行配置。<br>
+<img src="https://DennyWanye.GitHub.io/post-images/1722318478288.png" alt="" loading="lazy"></li>
+<li>利用 <code>useEmailPasswordAuth()</code>来进行登录和注册</li>
+</ol>
+<pre><code class="language-javascript">  const { result, logIn, register } = useEmailPasswordAuth();
+
+  const loginFunction = async () =&gt; {
+    if (!isLogin) {
+      setIsLogin(true)
+      showSnackbar('请输入账号密码进行登录，谢谢🙏。')
+      return
+    }
+    if (email &amp;&amp; password) {
+      logIn({ email, password });
+    } else {
+      showSnackbar('账号或者密码为空，请检查，谢谢🙏。')
+    }
+  }
+
+  const hasEmailErrors = () =&gt; {
+    if (email === '') {
+      return false
+    }
+    return !email.includes('@');
+  };
+
+  const registerFunction = async () =&gt; {
+    if (isLogin) {
+      setIsLogin(false)
+      showSnackbar('请输入账号、密码和用户名进行注册，谢谢🙏。')
+      return
+    }
+    await register({ email, password });
+  };
+
+  useEffect(() =&gt; {             //注意：利用useEffect在注册完成后，触发登录操作，用户注册完，以后，还需要登录激活一下。否则就只能在web 的 App users（左侧）--&gt; Users --&gt; Pending 中才能找到 
+
+    if (result.success &amp;&amp; result.operation === AuthOperationName.Register) {
+      logIn({ email, password });
+    }
+  }, [result, logIn, email, password]);
+</code></pre>
+<h3 id="关于修改已经存在的文档数据">关于修改已经存在的文档数据：</h3>
+<pre><code class="language-javascript">realm.create('UserData', {                  //这个对象需要修改完成后的完整集合数据（?存在疑问，需要验证一下)
+            _id: userData._id,
+            userId: userId,
+            tags: [...userData.tags, writeObj],
+            ideas: [...userData.ideas],
+          }, 'modified');
+
+//此为创建数据的方法
+await realm.write(() =&gt; {
+        realm.create(&lt;SchemaName&gt;, writeObj)
+      })
+</code></pre>
+<h3 id="新添加schema的方法">新添加schema的方法</h3>
+<ol>
+<li>本地添加好model</li>
+</ol>
+<pre><code class="language-javascript">import { BSON, ObjectSchema, Object, List } from &quot;realm&quot;;
+import { Events } from &quot;./Events&quot;;
+
+export class Timelines extends Object&lt;Timelines&gt; {
+    _id!: BSON.ObjectId;
+    name!: string;
+    desc: string = '';
+    events!: List&lt;Events&gt; ;
+
+    static schema: ObjectSchema = {
+        name: 'Timelines',
+        properties: {
+          _id: 'objectId',
+          name: {type: 'string', indexed: 'full-text'},
+          desc: 'string',
+          events: 'Events[]',
+        },
+        primaryKey: '_id',
+      };
+}
+
+</code></pre>
+<ol start="2">
+<li>将其放到初始化和订阅中</li>
+</ol>
+<p>初始化：</p>
+<pre><code class="language-javascript">
+  const schemas: any = [Ideas, Tags, Collections, ObjectOfCollections, Events, **Timelines**,  UserData]
+
+
+//处理如果同步远端realm失败的情况，作用，同步失败的报错信息影响用户体验
+  const syncConfigWithErrorHandling: any = {
+    flexible: true,
+    onError: (_session: any, error: any) =&gt; {
+      console.log(_session)
+      console.log(error);
+    },
+    //是否是用于给remote初始化schemas？
+    initialSubscriptions: {
+      update(subs: any, realm: any) {
+        subs.add(realm.objects(**schemas**));
+      },
+    },
+    newRealmFileBehavior: realmAccessBehavior,
+    existingRealmFileBehavior: realmAccessBehavior,
+  }
+
+
+&lt;PaperProvider&gt;
+      &lt;AppProvider id={APP_ID} &gt;
+        &lt;UserProvider fallback={LogIn}&gt;
+          &lt;RealmProvider
+            path='./NovelTagSys.realm'
+            schema={schemas}
+            sync={syncConfigWithErrorHandling}
+          &gt;
+            &lt;Stack&gt;
+              &lt;Stack.Screen name=&quot;(tabs)&quot; options={{ headerShown: false }} /&gt;
+              &lt;Stack.Screen name=&quot;+not-found&quot; /&gt;
+            &lt;/Stack&gt;
+          &lt;/RealmProvider&gt;
+        &lt;/UserProvider&gt;
+      &lt;/AppProvider&gt;
+    &lt;/PaperProvider&gt;
+
+</code></pre>
+<p>错误：<code>Client attempted a write that is not allowed; it has been reverted</code><br>
+fulllog:</p>
+<pre><code class="language-javascript"> LOG  {&quot;weakInternal&quot;: {Symbol(Realm.WeakSyncSession.external_pointer): {}}}
+ LOG  [SyncError: Client attempted a write that is not allowed; it has been reverted]
+
+</code></pre>
+<ol start="3">
+<li>
+<p>重新启动远端的 sync<br>
+根据文档说明，修改了schema之后，需要 <code>Terminate Sync</code> 之后， 再开始启动<br>
+<img src="https://DennyWanye.GitHub.io/post-images/1722590188452.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>修改新建的 schema 权限，否则前端无法对其进行读写<br>
+<img src="https://DennyWanye.GitHub.io/post-images/1722593173452.png" alt="" loading="lazy"></p>
+</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[在Expo项目中使用 realm ]]></title>
+        <id>https://DennyWanye.GitHub.io/post/zai-expo-xiang-mu-zhong-shi-yong-realm/</id>
+        <link href="https://DennyWanye.GitHub.io/post/zai-expo-xiang-mu-zhong-shi-yong-realm/">
+        </link>
+        <updated>2024-07-09T03:13:16.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="一-安装">一、安装</h3>
+<p>realm的官方有维护一个realm支持的RN、node、Expo、realm、@realm/react的兼容性图表：<br>
+https://github.com/realm/realm-js/blob/main/COMPATIBILITY.md</p>
+<p><code>npx expo install realm @realm/react</code></p>
+<p>Expo 本身不支持 realm， 所以需要用安卓环境来运行：</p>
+<p><code>npm install expo-dev-client</code></p>
+<p><code>npx expo run:android</code></p>
+<h3 id="二-在项目本地运行realm">二、 在项目本地运行Realm</h3>
+<ol>
+<li>配置 ReamlProvider</li>
+</ol>
+<pre><code class="language-javascript">...more code...
+import { RealmProvider } from '@realm/react';
+import { Ideas } from '@/models/Ideas';
+import { Tags } from '@/models/Tags';
+import { Collections } from '@/models/Collections';
+
+...more code...
+
+&lt;PaperProvider&gt;
+
+      //path: 为可设置的安装realm的相对路径
+      //schema为需要提前创建的document 样式
+      //isMemory 为是否在内存中运行，是的话，数据只会储存在内存中，反之，会放到本地
+      &lt;RealmProvider path='./NovelTagSys.realm' schema={[Ideas, Tags, Collections]} inMemory={false}&gt;
+        &lt;ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}&gt;
+          &lt;Stack&gt;
+            &lt;Stack.Screen name=&quot;(tabs)&quot; options={{ headerShown: false }} /&gt;
+            &lt;Stack.Screen name=&quot;+not-found&quot; /&gt;
+          &lt;/Stack&gt;
+        &lt;/ThemeProvider&gt;
+      &lt;/RealmProvider&gt;
+    &lt;/PaperProvider&gt;
+
+</code></pre>
+<ol start="2">
+<li>创建models</li>
+</ol>
+<p>创建嵌套的 schema的方式： https://www.mongodb.com/docs/atlas/device-sdks/sdk/react-native/model-data/relationships-and-embedded-objects/</p>
+<p>这里有一个问题，就是如何将创建的对象和在组件中需要使用的 interface 类型一致。</p>
+<pre><code class="language-javascript">import { BSON, ObjectSchema, Object, List } from &quot;realm&quot;;
+import { TagsTS } from &quot;@/constants/Interface&quot;;
+import { Tags } from &quot;./Tags&quot;;
+
+export class Collections extends Object&lt;Collections&gt; {
+    _id!: BSON.ObjectId;
+    name!: string;
+    desc: string = '';
+    tags!: List&lt;Tags&gt; | TagsTS;
+
+    //static primaryKey = '_id';
+
+    static schema: ObjectSchema = {
+        name: 'Collections',
+        properties: {
+          _id: 'objectId',
+          name: 'string',
+          desc: 'string',
+          tags: 'Tags[]',
+        },
+        primaryKey: '_id',
+      };
+}
+
+
+</code></pre>
+<ol start="3">
+<li>CUDP操作</li>
+</ol>
+<pre><code>
+import { useRealm, useQuery } from '@realm/react';
+import { Tags } from '@/models/Tags';
+
+    const realm = useRealm()
+
+    const tags = useQuery(Tags);
+
+    const toUpdate = realm
+      .objects(Tags)
+      .filtered('name == $0', tag.name);
+
+    //create
+    realm.write(() =&gt; {
+        realm.create(&quot;Tags&quot;, {
+          _id: new BSON.ObjectId(),
+          name: tag.name,
+          type: tag.type,
+          desc: tag.desc,
+          color: tag.color,
+        })
+      })
+
+    //update
+    realm.write(() =&gt; {
+        toUpdate[0].name = tag.name;
+        toUpdate[0].type = tag.type;
+        toUpdate[0].desc = tag.desc;
+      });
+
+    //delete
+    const toDelete = realm
+      .objects(Tags)
+      .filtered('name == $0', deleteTagName);
+
+    realm.write(() =&gt; {
+      realm.delete(toDelete)
+    })
+
+</code></pre>
+<h3 id="qa">QA</h3>
+<h4 id="问题一-在-one-to-many-的-schema-中进行对嵌套的-子schema传递值的时候发现如果传递的是相同的数组会导致其清空数据库中-子schema对应的值">问题一、在 One-to-Many 的 schema 中进行对嵌套的 子schema，传递值的时候，发现如果传递的是相同的数组，会导致其清空数据库中 子schema，对应的值。</h4>
+<p>如下 Error，我想要将 <code>collectionTags</code> 的值更新到 <code>toUpdate[0].tags</code> 中，但是如果它们相同的话，反而会清除realm中  <code>toUpdate[0].tags</code>  的值。</p>
+<p>应该是在将数据库中获取的 子schema 对应的值，需要进行解构赋值操作，才能传给 <code>realm.write</code> 进行更新。</p>
+<pre><code class="language-javascirpt">
+      realm.write(() =&gt; {
+        toUpdate[0].name = collectionNmae;
+        toUpdate[0].desc = collectionDesc;
+        toUpdate[0].tags = [...collectionTags];  //需要这样操作一下
+      });
+
+//以下操作也会清除 toUpdate[0].tags对应数据库中的值
+
+      realm.write(() =&gt; {
+        toUpdate[0].name = collectionNmae;
+        toUpdate[0].desc = collectionDesc;
+        // toUpdate[0].tags = [...collectionTags];
+        toUpdate[0].tags = toUpdate[0].tags;
+      });
+
+</code></pre>
+<h5 id="error">Error：</h5>
+<pre><code> LOG  toUpdate
+ LOG  [{&quot;_id&quot;: [ObjectId], &quot;desc&quot;: &quot;this is a really big pig(changedasni ga )&quot;, &quot;name&quot;: &quot;pig king&quot;, &quot;tags&quot;: [Array]}]
+ LOG  toUpdate[0].tags
+ LOG  [{&quot;_id&quot;: [ObjectId], &quot;color&quot;: &quot;hsla(87,50%,70%,1)&quot;, &quot;desc&quot;: &quot;猪皮够厚，能挨揍&quot;, &quot;manufacturer&quot;: [Array], &quot;name&quot;: &quot;扛揍&quot;, &quot;type&quot;: &quot;特长&quot;}, {&quot;_id&quot;: [ObjectId], &quot;color&quot;: &quot;hsla(4,50%,70%,1)&quot;, &quot;desc&quot;: &quot;特别能睡，吃完就睡&quot;, &quot;manufacturer&quot;: [Array], &quot;name&quot;: &quot;嗜睡&quot;, &quot;type&quot;: &quot;特长&quot;}, {&quot;_id&quot;: [ObjectId], &quot;color&quot;: &quot;hsla(106,50%,70%,1)&quot;, &quot;desc&quot;: &quot;能进化成天蓬小猪&quot;, &quot;manufacturer&quot;: [Array], &quot;name&quot;: &quot;能进化&quot;, &quot;type&quot;: &quot;可能性&quot;}, {&quot;_id&quot;: [ObjectId], &quot;color&quot;: &quot;hsla(147,50%,70%,1)&quot;, &quot;desc&quot;: &quot;特别能吃特别能吃&quot;, &quot;manufacturer&quot;: [Array], &quot;name&quot;: &quot;暴食II&quot;, &quot;type&quot;: &quot;特长&quot;}, {&quot;_id&quot;: [ObjectId], &quot;color&quot;: &quot;hsla(304,50%,70%,1)&quot;, &quot;desc&quot;: &quot;这只是一个称号&quot;, &quot;manufacturer&quot;: [Array], &quot;name&quot;: &quot;猪猪1号&quot;, &quot;type&quot;: &quot;称号&quot;}, {&quot;_id&quot;: [ObjectId], &quot;color&quot;: &quot;hsla(127,50%,70%,1)&quot;, &quot;desc&quot;: &quot;特别能吃特别能吃特别能吃&quot;, &quot;manufacturer&quot;: [Array], &quot;name&quot;: &quot;暴食III&quot;, &quot;type&quot;: &quot;特长&quot;}]
+ LOG  collectionTags
+ LOG  [{&quot;_id&quot;: [ObjectId], &quot;color&quot;: &quot;hsla(87,50%,70%,1)&quot;, &quot;desc&quot;: &quot;猪皮够厚，能挨揍&quot;, &quot;manufacturer&quot;: [Array], &quot;name&quot;: &quot;扛揍&quot;, &quot;type&quot;: &quot;特长&quot;}, {&quot;_id&quot;: [ObjectId], &quot;color&quot;: &quot;hsla(4,50%,70%,1)&quot;, &quot;desc&quot;: &quot;特别能睡，吃完就睡&quot;, &quot;manufacturer&quot;: [Array], &quot;name&quot;: &quot;嗜睡&quot;, &quot;type&quot;: &quot;特长&quot;}, {&quot;_id&quot;: [ObjectId], &quot;color&quot;: &quot;hsla(106,50%,70%,1)&quot;, &quot;desc&quot;: &quot;能进化成天蓬小猪&quot;, &quot;manufacturer&quot;: [Array], &quot;name&quot;: &quot;能进化&quot;, &quot;type&quot;: &quot;可能性&quot;}, {&quot;_id&quot;: [ObjectId], &quot;color&quot;: &quot;hsla(147,50%,70%,1)&quot;, &quot;desc&quot;: &quot;特别能吃特别能吃&quot;, &quot;manufacturer&quot;: [Array], &quot;name&quot;: &quot;暴食II&quot;, &quot;type&quot;: &quot;特长&quot;}, {&quot;_id&quot;: [ObjectId], &quot;color&quot;: &quot;hsla(304,50%,70%,1)&quot;, &quot;desc&quot;: &quot;这只是一个称号&quot;, &quot;manufacturer&quot;: [Array], &quot;name&quot;: &quot;猪猪1号&quot;, &quot;type&quot;: &quot;称号&quot;}, {&quot;_id&quot;: [ObjectId], &quot;color&quot;: &quot;hsla(127,50%,70%,1)&quot;, &quot;desc&quot;: &quot;特别能吃特别能吃特别能吃&quot;, &quot;manufacturer&quot;: [Array], &quot;name&quot;: &quot;暴食III&quot;, &quot;type&quot;: &quot;特长&quot;}]
+
+</code></pre>
+<h3 id="问题二-怎么找到realm的文件">问题二 怎么找到realm的文件</h3>
+<p>Andriod:<br>
+首先用 Andriod Stadio 来打开，并启动文件:</p>
+<ol>
+<li><code>expo prebuild</code> 生成 andriod 和 ios 文件夹</li>
+<li>安装 gradle : <code>brew install gradle</code>。 注意： 如果你在文件夹 Andriod 下执行这个命令，它会顺手帮你将该文件夹下面的依赖安装好，会花一定的时间。</li>
+<li>用Andriod Stadio打开 andriod 文件夹。</li>
+<li>在 Andriod Stadio &gt; viwe &gt; Tool Windows &gt; Deveice Explorer 中，找到 <code>realm.path</code> 对应的 .ream 文件，双击/右键鼠标对应文件 &gt; save as ... 保存好文件</li>
+<li>用 Realm Stadio 打开对应文件</li>
+</ol>
+<p>IOS： 直接用 RealmStadio打开  <code>realm.path</code> 对应的 .ream 文件就行了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[React 封装弹窗组建]]></title>
+        <id>https://DennyWanye.GitHub.io/post/react-feng-zhuang-dan-chuang-zu-jian/</id>
+        <link href="https://DennyWanye.GitHub.io/post/react-feng-zhuang-dan-chuang-zu-jian/">
+        </link>
+        <updated>2024-07-08T02:07:08.000Z</updated>
+        <content type="html"><![CDATA[<p>封装一个弹窗输入，输出组件：</p>
+<p>需要注意的点：</p>
+<ol>
+<li><code>“React.createElement”最多可提供“2”个</code>，修改组件接受对象 <code>props</code> 为入参。</li>
+<li>因为无法利用数组来调动 <code>useState</code>，所以表格的双向绑定的数据和修改方法是从父组件传递过来的。</li>
+</ol>
+<p>如下是代码：</p>
+<pre><code class="language-javascript">
+import { Portal, TextInput, Text, Modal } from 'react-native-paper';
+import { StyleSheet, SafeAreaView } from 'react-native';
+import { ReactNode } from 'react';
+
+type formItems = {
+    label: string,
+    value: string,
+    setValue: Function,
+}
+
+interface PropsTagEditor {
+    title: string,
+    visible: boolean,
+    formItems: Array&lt;formItems&gt;,
+    submitFun: Function
+}
+
+export default function UseEditTag(Props: PropsTagEditor): ReactNode {
+
+    const { title, visible, formItems, submitFun } = Props
+
+    const containerStyle = { backgroundColor: 'white', padding: 20 };
+
+    return (&lt;Portal&gt;
+        &lt;Modal visible={visible} onDismiss={() =&gt; submitFun()} contentContainerStyle={containerStyle}&gt;
+            &lt;SafeAreaView&gt;
+                &lt;Text&gt;{title}&lt;/Text&gt;
+                {
+                    formItems.map((item, index) =&gt; {
+                        return (
+                            &lt;TextInput
+                                key={index}
+                                label={item.label}
+                                value={item.value}
+                                onChangeText={text =&gt; item.setValue(text)}
+                                mode=&quot;outlined&quot;
+                                style={styles.tagInput}
+                            /&gt;
+                        )
+                    })
+                }
+            &lt;/SafeAreaView&gt;
+        &lt;/Modal&gt;
+    &lt;/Portal&gt;)
+}
+
+const styles = StyleSheet.create({
+    tagInput: {
+        marginTop: 10,
+    },
+});
+
+
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[react native 和 Expo 框架的使用遇到的问题]]></title>
+        <id>https://DennyWanye.GitHub.io/post/react-native-he-expo-kuang-jia-de-shi-yong-yu-dao-de-wen-ti/</id>
+        <link href="https://DennyWanye.GitHub.io/post/react-native-he-expo-kuang-jia-de-shi-yong-yu-dao-de-wen-ti/">
+        </link>
+        <updated>2024-07-01T03:41:25.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="问题一commanderror-required-property-androidpackage-is-not-found-in-the-project-appjson-this-is-required-to-open-the-app">问题一：<code>CommandError: Required property 'android.package' is not found in the project app.json. This is required to open the app.</code></h3>
+<p>原因在 <code>package.json</code> 中缺少 <code>android.package</code> 字段，可以在package.json文件中添加如下属性：</p>
+<pre><code class="language-javascript">
+  &quot;android&quot;: {
+    &quot;package&quot;: &quot;com.yourcompany.yourappname&quot;,
+    &quot;versionCode&quot;: 1
+  }
+
+</code></pre>
+<h3 id="问题二关于-expo-image-picker-的使用方法">问题二：关于 <code>expo-image-picker</code> 的使用方法：</h3>
+<pre><code class="language-javascript">import * as ImagePicker from 'expo-image-picker';
+
+//利用 launchImageLibraryAsync 方法来返回一个 uri 资源，让 &lt;Image&gt;来进行显示。
+//其launchImageLibraryAsync() 接收一个指定了不同选项的对象。该对象是 ImagePickerOptions 
+//object。我们可以在调用方法时传递对象来指定不同的选项。
+
+//当 allowsEditing 设置为 true 时，用户可以在 Android 和 iOS 上的选择过程中裁剪图片，但不能
+//在 Web 上裁剪图片。
+const pickImageAsync = async () =&gt; {
+    let result = await ImagePicker.launchImageLibraryAsync({
+      allowsEditing: true,
+      quality: 1,
+    })
+
+    console.log(result)
+
+    if(!result.canceled) {
+      setSelectImage(result.assets[0].uri)
+      console.log(result);
+    } else {
+      alert('You did not select any image.');
+    }
+  }
+
+//&lt;Image&gt; 中的 source 可以是 图片的相对路径和绝对路径，也可以是url，也可以是 uri 
+  &lt;Image source={imageSource} &gt;&lt;/Image&gt;
+
+//为了演示 result 对象包含哪些属性，下面是一个结果对象示例：
+{
+  &quot;assets&quot;: [
+    {
+      &quot;assetId&quot;: null,
+      &quot;base64&quot;: null,
+      &quot;duration&quot;: null,
+      &quot;exif&quot;: null,
+      &quot;height&quot;: 4800,
+      &quot;rotation&quot;: null,
+      &quot;type&quot;: &quot;image&quot;,
+      &quot;uri&quot;: &quot;file:///data/user/0/host.exp.exponent/cache/ExperienceData/%username%252Fsticker-smash-47-beta/ImagePicker/77c4e56f-4ccc-4c83-8634-fc376597b6fb.jpeg&quot;,
+      &quot;width&quot;: 3200
+    }
+  ],
+  &quot;canceled&quot;: false
+}
+
+</code></pre>
+<h3 id="问题三构建项目的问题">问题三：构建项目的问题</h3>
+<p>现在对于expo项目构建的理解：</p>
+<ol>
+<li>本地将代码 上传到 云端，并给出对应的配置</li>
+<li>云端利用metro来根据配置，来进行构建对应的版本</li>
+<li>云端返回对应版本应用的下载链接</li>
+</ol>
+<h4 id="构建development-应用">构建development 应用</h4>
+<pre><code>
+eas --version
+
+//确保你已经登录了
+eas whoami
+
+//生成eas配置,可以生成对应Android和ios平台对应的配置文件 eas.json，此文件生成在项目根目录。
+
+eas init 
+
+eas build:configure
+
+//生成可以链接到本地测试服务器的 expo安装包
+//需要在项目目录安装 expo-dev-client  同时，你需要expo的账户用作远程登录
+//并且 也需要在全局安装eas-cli
+
+npm install expo-dev-client 
+npm install -g eas-cli
+
+eas build --profile=development --platform=android
+
+//生成可以直接可以安装打开的安装包，没有测试环境
+eas build --profile=preview --platform=android
+
+
+</code></pre>
+<p>在本地打包：</p>
+<p>如果你的电脑已经配置好了java、NDK环境，只需执行</p>
+<pre><code>eas build --platform android --profile release --local
+</code></pre>
+<p>报了release相关的错误，请检查eas.json文件中 --&gt; build --&gt; release的设置问题<br>
+error 示例:</p>
+<pre><code>★ eas-cli@10.1.0 is now available.
+To upgrade, run npm install -g eas-cli.
+Proceeding with outdated version.
+
+Missing build profile in eas.json: release
+Error: build command failed.
+</code></pre>
+<p>eas.json文件示例：</p>
+<pre><code>
+{
+  &quot;cli&quot;: {
+    &quot;version&quot;: &quot;&gt;= 10.0.3&quot;
+  },
+  &quot;build&quot;: {
+    &quot;development&quot;: {
+      &quot;developmentClient&quot;: true,
+      &quot;distribution&quot;: &quot;internal&quot;
+    },
+    &quot;preview&quot;: {
+      &quot;distribution&quot;: &quot;internal&quot;
+    },
+    &quot;production&quot;: {},
+    &quot;release&quot;: {
+      &quot;android&quot;: {
+        &quot;buildType&quot;: &quot;apk&quot;
+      }
+    }
+  },
+  &quot;submit&quot;: {
+    &quot;production&quot;: {}
+  }
+}
+
+</code></pre>
+<p>有用的文章链接：https://juejin.cn/post/7357292176945184795</p>
+<h3 id="问题4-authentication-is-required">问题4:  <code>Authentication is required</code></h3>
+<p>运行 <code>npx expo run:android</code> 报错</p>
+<pre><code>Authentication is required
+✖ Failed to create the native project.
+You may want to delete the `./ios` and/or `./android` directories before trying again.
+</code></pre>
+<p>解决方法：</p>
+<ol>
+<li>全局安装 expo脚手架： <code>npm install -g expo-cli</code></li>
+<li>运行 <code>expo whoami</code> 确认是否是登录的状态</li>
+<li>运行 ``expo prebuild`</li>
+</ol>
+<p>link: https://stackoverflow.com/questions/77760368/authentication-required-error-message-when-running-npx-expo-prebuild-in-term</p>
+<h3 id="问题5-expo-apiv2error-entity-not-authorized">问题5: expo ApiV2Error: Entity Not Authorized.</h3>
+<p>原因：the problem was that the owner property in app.json did not match the owner for whatever account you're logged into on expo-cli or your expo go app. So just try to check if owner property is correct.</p>
+<p>解决：</p>
+<pre><code class="language-javascript">npx expo start --offline
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[怎么样使用Tag标签]]></title>
+        <id>https://DennyWanye.GitHub.io/post/how-to-use-tag-in-git/</id>
+        <link href="https://DennyWanye.GitHub.io/post/how-to-use-tag-in-git/">
+        </link>
+        <updated>2024-06-29T09:17:18.000Z</updated>
+        <content type="html"><![CDATA[<p>For work, need to use <code>tag</code> in git to mark a version, so that jenkins can deploy it.</p>
+<p>创建并推送一个带备注的标签tag：</p>
+<pre><code>git tag -a TagName -m ‘useful info’
+
+git push origin TagName
+
+</code></pre>
+<p>创建轻量级标签（不带备注）：</p>
+<pre><code>
+git tag TagName
+
+</code></pre>
+<p>搜索tag：</p>
+<pre><code>
+git tag -l ‘支持正则表达式’
+
+</code></pre>
+<p>删除本地tag：</p>
+<pre><code>git tag -d TagName
+
+</code></pre>
+<p>删除远程的tag：</p>
+<pre><code>git push origin -d tag TagName
+
+git push origin --delete tag TagName
+
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[javascript中 New 的底层实现原理]]></title>
+        <id>https://DennyWanye.GitHub.io/post/javascript-zhong-new-de-di-ceng-shi-xian-yuan-li/</id>
+        <link href="https://DennyWanye.GitHub.io/post/javascript-zhong-new-de-di-ceng-shi-xian-yuan-li/">
+        </link>
+        <updated>2022-06-02T10:30:06.000Z</updated>
+        <content type="html"><![CDATA[<p>new 的作用，就是省那么几行代码。（也就是所谓的）。</p>
+<p>（1）新建一个对象<br>
+（2）设置原型链<br>
+（3）让F中的this指向instance，执行F的函数体。<br>
+（4）判断F的返回值类型：<br>
+如果是值类型，就丢弃它，还是返回instance。<br>
+如果是引用类型，就返回这个引用类型的对象，替换掉instance。</p>
+<pre><code class="language-js">
+function create(Con, ...args){ 
+ // 创建一个空的对象 
+ this.obj = {}; 
+ // 将空对象指向构造函数的原型链
+ Object.setPrototypeOf(this.obj, Con.prototype); 
+ // obj绑定到构造函数上，便可以访问构造函数中的属性，即this.obj.Con(args) 
+ let result = Con.apply(this.obj, args);
+ // 如果返回的result是一个对象则返回 
+ // new方法失效，否则返回
+obj   return result instanceof Object ? result : this.obj;
+ }
+
+</code></pre>
+<h3 id="1总览">1.总览</h3>
+<figure data-type="image" tabindex="1"><img src="https://DennyWanye.GitHub.io/post-images/1654174286254.png" alt="" loading="lazy"></figure>
+<p>图的说明：右下角为图例，红色箭头表示__proto__属性指向、绿色箭头表示prototype属性的指向、棕色实线箭头表示本身具有的constructor属性的指向，棕色虚线箭头表示继承而来的constructor属性的指向；蓝色方块表示对象，浅绿色方块表示函数（这里为了更好看清，Foo()仅代表是函数，并不是指执行函数Foo后得到的结果，图中的其他函数同理）。图的中间部分即为它们之间的联系，图的最左边即为例子代码</p>
+<h3 id="2__proto__属性">2.__proto__属性</h3>
+<p>首先，我们需要牢记两点：①__proto__和constructor属性是对象所独有的；② prototype属性是函数所独有的。但是由于JS中函数也是一种对象，所以函数也拥有__proto__和constructor属性，这点是致使我们产生困惑的很大原因之一。</p>
+<figure data-type="image" tabindex="2"><img src="https://DennyWanye.GitHub.io/post-images/1654174483109.png" alt="" loading="lazy"></figure>
+<p>第一，这里我们仅留下 <strong>proto</strong> 属性，它是对象所独有的，可以看到__proto__属性都是由一个对象指向一个对象，即指向它们的原型对象（也可以理解为父对象），那么这个属性的作用是什么呢？它的作用就是当访问一个对象的属性时，如果该对象内部不存在这个属性，那么就会去它的__proto__属性所指向的那个对象（可以理解为父对象）里找，如果父对象也不存在这个属性，则继续往父对象的__proto__属性所指向的那个对象（可以理解为爷爷对象）里找，如果还没找到，则继续往上找…直到原型链顶端null（可以理解为原始人。。。），再往上找就相当于在null上取值，会报错（可以理解为，再往上就已经不是“人”的范畴了，找不到了，到此结束，<strong>null为原型链的终点</strong>），由以上这种通过__proto__属性来连接对象直到null的一条链即为我们所谓的原型链。</p>
+<p>其实我们平时调用的字符串方法、数组方法、对象方法、函数方法等都是靠__proto__继承而来的。</p>
+<h3 id="3-prototype属性">3. prototype属性</h3>
+<figure data-type="image" tabindex="3"><img src="https://DennyWanye.GitHub.io/post-images/1654174512052.png" alt="" loading="lazy"></figure>
+<p>prototype属性，别忘了一点，就是我们前面提到要牢记的两点中的第二点，它是函数所独有的，它是从一个函数指向一个对象。它的含义是函数的原型对象，也就是这个函数（其实所有函数都可以作为构造函数）所创建的实例的原型对象，由此可知：f1.<strong>proto</strong> === Foo.prototype，它们两个完全一样。那prototype属性的作用又是什么呢？它的作用就是包含可以由特定类型的所有实例共享的属性和方法，也就是让该函数所实例化的对象们都可以找到公用的属性和方法。任何函数在创建的时候，其实会默认同时创建该函数的prototype对象。</p>
+<h3 id="4-constructor属性">4. constructor属性</h3>
+<figure data-type="image" tabindex="4"><img src="https://DennyWanye.GitHub.io/post-images/1654174672060.png" alt="" loading="lazy"></figure>
+<p>constructor属性也是对象才拥有的，它是从一个对象指向一个函数，含义就是指向该对象的构造函数，每个对象都有构造函数（本身拥有或继承而来，继承而来的要结合__proto__属性查看会更清楚点，如下图所示），从上图中可以看出Function这个对象比较特殊，它的构造函数就是它自己（因为Function可以看成是一个函数，也可以是一个对象），所有函数和对象最终都是由Function构造函数得来，所以constructor属性的终点就是Function这个函数。</p>
+<figure data-type="image" tabindex="5"><img src="https://DennyWanye.GitHub.io/post-images/1654175083956.png" alt="" loading="lazy"></figure>
+<p>这里解释一下上段中“每个对象都有构造函数”这句话。这里的意思是每个对象都可以找到其对应的constructor，因为创建对象的前提是需要有constructor，而这个constructor可能是对象自己本身显式定义的或者通过__proto__在原型链中找到的。而单从constructor这个属性来讲，只有prototype对象才有。每个函数在创建的时候，JS会同时创建一个该函数对应的prototype对象，而<code>函数创建的对象.__proto__ === 该函数.prototype</code>，<code>该函数.prototype.constructor===该函数本身</code>，故通过函数创建的对象即使自己没有constructor属性，它也能通过__proto__找到对应的constructor，所以任何对象最终都可以找到其构造函数（null如果当成对象的话，将null除外）。如下：</p>
+<figure data-type="image" tabindex="6"><img src="https://DennyWanye.GitHub.io/post-images/1654175145825.png" alt="" loading="lazy"></figure>
+<h3 id="5-总结">5. 总结</h3>
+<p>总结一下：</p>
+<p>我们需要牢记两点：①__proto__和constructor属性是对象所独有的；② prototype属性是函数所独有的，因为函数也是一种对象，所以函数也拥有__proto__和constructor属性。<br>
+__proto__属性的作用就是当访问一个对象的属性时，如果该对象内部不存在这个属性，那么就会去它的__proto__属性所指向的那个对象（父对象）里找，一直找，直到__proto__属性的终点null，再往上找就相当于在null上取值，会报错。通过__proto__属性将对象连接起来的这条链路即我们所谓的原型链。<br>
+prototype属性的作用就是让该函数所实例化的对象们都可以找到公用的属性和方法，即f1.<strong>proto</strong> === Foo.prototype。<br>
+constructor属性的含义就是指向该对象的构造函数，所有函数（此时看成对象了）最终的构造函数都指向Function。<br>
+  本文就此结束了，希望对那些对JS中的prototype、__proto__与constructor属性有困惑的同学有所帮助。</p>
+<pre><code class="language-js">function inherit( Child, Parent ) {
+    // 继承原型上的属性 
+    Child.prototype = Object.create(Parent.prototype)
+    // 修复 constructor
+    Child.prototype.constructor = Child
+    // 存储超类
+    Child.super = Parent
+    // 静态属性继承
+    if (Object.setPrototypeOf){
+        // setPrototypeOf es6
+        Object.setPrototypeOf(Child, Parent)
+    } else if (Child.__proto__) {
+        // __proto__ es6 引入，但是部分浏览器早已支持
+        Child.__proto__ = Parent
+    } else {
+        // 兼容 IE10 等陈旧浏览器
+        // 将 Parent 上的静态属性和方法拷贝一份到 Child 上，不会覆盖 Child 上的方法
+        for (var k in parent) {
+            if( Parent.hasOwnProperty(k) &amp;&amp; !(k in Child)) {
+                Child[k] = Parent[k]
+            }
+        }
+    }
+}
+
+</code></pre>
+<p><a href="https://chen-cong.blog.csdn.net/article/details/81211729">很好的一篇说明文章</a><br>
+<a href="http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html">Javascript继承机制的设计思想</a></p>
+]]></content>
+    </entry>
+</feed>
